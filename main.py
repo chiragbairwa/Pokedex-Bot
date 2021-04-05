@@ -1,4 +1,3 @@
-github
 #
 import pokebase as pb
 from telegram.ext import *
