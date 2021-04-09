@@ -1,8 +1,13 @@
 from telegram.ext import Updater , CommandHandler , MessageHandler , Filters
 import json
+#API_KEY = "1694781352:AAF9iSKRof6Z6pO6YSHyM-JTG9lP0TcbssQ"
+""" API """
 
-API_KEY = "1694781352:AAF9iSKRof6Z6pO6YSHyM-JTG9lP0TcbssQ"
+API = {}
+with open('API.json','r') as f:
+	data = json.load(f)
 
+API_KEY = data['API_KEY']
 """
     Json Output: 
     {
